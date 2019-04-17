@@ -1,3 +1,3 @@
 # Ingestion
 
-Use this folder to provide code about your data ingestion, if any.
+Apache Kafka and kafka-python used.
