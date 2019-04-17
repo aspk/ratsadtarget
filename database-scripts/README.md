@@ -1,3 +1,3 @@
 # Database scripts
 
-PostgreSQL
+PostgreSQL and psycopg2
