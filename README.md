@@ -35,7 +35,7 @@ Real time ad bidding industry requires high throughput pipelines that can proces
 ## Architecture
 Data is ingested through AWS S3 by a python producer into a  Kafka topic. This data is then fed to  Spark Structured Streaming for aggregation using Real time Spark SQL queries. The data is ingested into a new Kafka topic and then python consumers write the data to a PostgreSQL database.
 
-[Imgur](https://i.imgur.com/uEljLI4.png)
+![alt_text](https://i.imgur.com/uEljLI4.png)
 
 ## Dataset
 Reddit.com comment dataset downloaded from [Pushshift](https://files.pushshift.io/reddit/comments/)
@@ -57,12 +57,12 @@ Increasing producer throughput
 Each producer sends data to kafka at the rate of 700 messages/s (acks = 1, as I dont want to loose any messages). 
 To increase the throughput (messages/s) I increased the the number of producers parallely writing to multiple kafka partitions.
 
-![alt text](https://imgur.com/uEljLI4 "Pipeline")
+![alt text](https://imgur.com/uEljLI4.png)
 
 Increasing consumer throughput
 Each consumer can write to postgres at a rate of ~1000 messages/s. To increase the write speed I used multiple kafka partitions and multiple consumers in a consumer group.
 
-![alt text](https://imgur.com/sFtM2y4 "Pipeline")
+![alt text](https://imgur.com/sFtM2y4)
 
 
 [//]:# ## Trade-offs
