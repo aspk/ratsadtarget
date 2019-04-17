@@ -62,7 +62,7 @@ To increase the throughput (messages/s) I increased the the number of producers 
 Increasing consumer throughput
 Each consumer can write to postgres at a rate of ~1000 messages/s. To increase the write speed I used multiple kafka partitions and multiple consumers in a consumer group.
 
-![alt text](https://imgur.com/sFtM2y4)
+![alt text](https://imgur.com/sFtM2y4.png)
 
 
-[//]:# ## Trade-offs
+[//]:# (## Trade-offs)
