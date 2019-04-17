@@ -35,7 +35,7 @@ Real time ad bidding industry requires high throughput pipelines that can proces
 ## Architecture
 Data is ingested through AWS S3 by a python producer into a  Kafka topic. This data is then fed to  Spark Structured Streaming for aggregation using Real time Spark SQL queries. The data is ingested into a new Kafka topic and then python consumers write the data to a PostgreSQL database.
 
-![alt_text](https://i.imgur.com/uEljLI4.png)
+![alt_text](https://i.imgur.com/NWmIh8p.png)
 
 ## Dataset
 Reddit.com comment dataset downloaded from [Pushshift](https://files.pushshift.io/reddit/comments/)
