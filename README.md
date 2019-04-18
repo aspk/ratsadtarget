@@ -7,7 +7,7 @@ RATS: Realtime Ad Target System. A data pipeline that ingests real time social m
 <hr/>
 
 ## How to install and get it up and running
-Cluster setup donw with [pegasus](https://github.com/InsightDataScience/pegasus) on AWS.
+Setup cluster with [pegasus](https://github.com/InsightDataScience/pegasus) on AWS.
 
 Create a VPC
 
