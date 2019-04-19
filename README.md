@@ -3,6 +3,9 @@
 RATS: Realtime Ad Target System. A data pipeline that ingests real time social media comment data and processes it with real time SQL queries.   
 
 [Presentation Link](https://docs.google.com/presentation/d/1ByLgQYYm2pEewjAqjKKPnzJPrHq2Ncxq-mxKJygP8QA/edit#slide=id.p2) 
+
+Video of the system demo here: Shows the posts with the highest number of comments.
+
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/WtTxqiofKR0/0.jpg)](https://www.youtube.com/watch?v=WtTxqiofKR0)
 
 <hr/>
