@@ -41,7 +41,7 @@ def main():
     print('source selected')
     print('query')
     lines.createOrReplaceTempView("updates")
-    rowCounts = spark.sql(
+    lines = spark.sql(
         "SELECT * FROM updates WHERE body LIKE '%vacation%'or body LIKE '%holiday%' ")
 
     rowCounts = lines.groupBy('post', window('timestamp', '1 seconds',
