@@ -1,3 +1,3 @@
 # Application for Project-Title
 
-Flask used for web app
+Provide details about how your UI works.
