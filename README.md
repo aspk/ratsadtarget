@@ -68,16 +68,19 @@ Each consumer can write to postgres at a rate of ~1000 messages/s. To increase t
 
 ![alt text](https://imgur.com/sFtM2y4.png)
 
-Working with Kafka:
+## Working with Kafka:
 
-Set failondataloss: false in spark structured streaming source. Incase streaming application shuts downdue to lost data in kafka or missing offsets.(low retention period or no replication of topics across brokers)
+1. Set failondataloss: false in spark structured streaming source. Incase streaming application shuts downdue to lost data in kafka or missing offsets.(low retention period or no replication of topics across brokers)
 
-Set retention period to a low number: Due to the size of the data source.
+2. Set retention period to a low number: Due to the size of the data source.
 
-Working with spark strucutred streaming: 
+## Working with spark strucutred streaming: 
 
-To reduce latency use continuous trigger( 1 ms), this mode does not support aggregations.
+1. To reduce latency use continuous trigger( 1 ms), this mode does not support aggregations.
 
-Reducing the number of spark sql paritions, reduces processing time. Lowest processing time achived is ~ 600 ms with 6 parititions. 
+2. Reducing the number of spark sql paritions, reduces processing time. Lowest processing time achived is ~ 600 ms with 6 parititions. 
+
+![alt text](https://imgur.com/uEljLI4.png)
+
 
 [//]:# (## Trade-offs)
