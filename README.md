@@ -4,7 +4,7 @@ RATS: Realtime Ad Target System. A data pipeline that ingests real time social m
 
 [Presentation Link](https://docs.google.com/presentation/d/1ByLgQYYm2pEewjAqjKKPnzJPrHq2Ncxq-mxKJygP8QA/edit#slide=id.p2) 
 
-Video of the system demo here: Shows the posts with the highest number of comments updated in real time.
+Video of the system demo here: Shows the posts with the highest page views updated in real time.
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/E4lTejKN7KE/0.jpg)](https://www.youtube.com/watch?v=E4lTejKN7KE)
 
