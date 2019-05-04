@@ -54,9 +54,9 @@ Each comment is stored in json format with the multiple keys of which following 
 5. author
 
 A wildcard is used to filter for certain words on the body of the comment. 
-In the following example, I use keywords to filter for Travel ads. The keywords could be improved by analyzing the user behaviour.
+In the following example, I use a few handpicked keywords to filter for Travel ads. The keywords could be improved by analyzing the user click behaviour.
 
-Here line corresponds to input streaming dataframe where keywords are filtered from the body of the comment.
+Here line corresponds to input streaming dataframe where comments are filtered according to keywords from the body of the comment.
 
 
 ```python
