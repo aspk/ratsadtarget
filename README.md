@@ -54,6 +54,58 @@ Each comment is stored in json format with the multiple keys of which following 
 5. author
 
 A wildcard is used to filter for certain words on the body of the comment. 
+In the following example, I use keywords to filter for Travel ads. The keywords could be improved by analyzing the user behaviour.
+
+Here line corresponds to input streaming dataframe where keywords are filtered from the body of the comment.
+
+
+```python
+lines = spark.sql("SELECT * FROM updates WHERE body LIKE '%vacation%'\
+                      OR body LIKE '%holiday%'\
+                      OR body LIKE '%beach%'\
+                      OR body LIKE '%urope%'\
+                      OR body LIKE '%trip%'\
+                      OR body LIKE '%tired%'\
+                      OR body LIKE '%work%'\
+                      OR body LIKE '%fatigue%'\
+                      OR body LIKE '%overwork%'\
+                      OR body LIKE '%party%'\
+                      OR body LIKE '%fun%'\
+                      OR body LIKE '%weekend%'\
+                      OR body LIKE '%ecember%'\
+                      OR body LIKE '%ummer%'\
+                      OR body LIKE '%ingapore%'\
+                      OR body LIKE '%alaysia%'\
+                      OR body LIKE '%hailand%'\
+                      OR body LIKE '%affari%'\
+                      OR body LIKE '%kids%'\
+                      OR body LIKE '%lions%'\
+                      OR body LIKE '%event%'\
+                      OR body LIKE '%ingapore%'\
+                      OR body LIKE '%bored%'\
+                      OR body LIKE '%happy%'\
+                      OR body LIKE '%excited%'\
+                      OR body LIKE '%sad%'\
+                      OR body LIKE '%breakup%'\
+                      OR body LIKE '%wedding%'\
+                      OR body LIKE '%visit%'\
+                      OR body LIKE '%no time%'\
+                      OR body LIKE '%car%'\
+                      OR body LIKE '%road%'\
+                      OR body LIKE '%bonus%'\
+                      OR body LIKE '%tan%'\
+                      OR body LIKE '%road-trip%'\
+                      OR body LIKE '%girl friend%'\
+                      OR body LIKE '%bus%'\
+                      OR body LIKE '%train%'\
+                      OR body LIKE '%motel%'\
+                      OR body LIKE '%visit%'\
+                      OR body LIKE '%mother%'\
+                      OR body LIKE '%father%'\
+                      OR body LIKE '%parents%'\
+                      OR body LIKE '%thanks giving%'\
+                      OR body LIKE '%long week%'")
+```
 
 ## Engineering challenges
 
