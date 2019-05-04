@@ -27,7 +27,7 @@ def index():
             break
         except:
             time.sleep(random.random())
-    user = {'username': 'akhilesh'}
+    user = {'username': 'username'}
     posts = []
     for x in records:
         xtemp = {}
