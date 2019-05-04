@@ -1,3 +1,4 @@
-# Application for Project-Title
+# Flask app
 
-Provide details about how your UI works.
+Queries data from the PostgreSQL database and displays in a Table.
+The latest timestamps are selected and ordered by the the page views in descending order.
