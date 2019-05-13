@@ -22,7 +22,7 @@ Install virtual environments on instances with python3, Tmux and kafka-python
 
 Cluster specs :
 
-1. Kafka cluster - 4 nodes m4.2xlarge
+1. Kafka cluster - 4 nodes m4.large
 
 2. Spark cluster - 1 master, 4 slaves m4.2xlarge
 
