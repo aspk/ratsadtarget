@@ -7,15 +7,16 @@ from kafka.errors import KafkaError
 import time
 import pytz
 import random
-
+# get s3connection
 conn = S3Connection()
 key = conn.get_bucket('aspk-reddit-posts').get_key('comments/RC_2017-10.bz2')
-
+# kafka producer
 producer = KafkaProducer(bootstrap_servers=['10.0.0.9:9092'])
 count = 0
+# file on s3 is compressed.
 decomp = bz2.BZ2Decompressor()
 
-
+# data downloaded in chunks
 CHUNK_SIZE = 5000*1024
 timezone = pytz.timezone("America/Los_Angeles")
 start_time = time.time()
