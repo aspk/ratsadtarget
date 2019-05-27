@@ -1,6 +1,12 @@
 # Project-Title
 
-RATS: Realtime Ad Target System. A data pipeline that ingests real time social media comment data and processes it with real time SQL queries.   
+RATS: Realtime Ad Target System. A data pipeline that ingests real time social media comment data and processes it with real time SQL queries.
+
+In this project I :
+1. Implemented a data pipeline called RATS : Real time Ad Target System on AWS.
+2. Selected best posts to place ads on a stream of reddit.com comment data for selected target categories.
+3. Ingested more than 1 Tb of data through Kafka and then processed it with Spark Structured Streaming to implement SQL queries on real time data with 600 ms latency. 
+4. Leveraged kafka consumer groups and multiple partitions to increase writes by more than 3 times and reduced latency by a factor of 10 by tuning spark.
 
 [Presentation Link](https://docs.google.com/presentation/d/1ByLgQYYm2pEewjAqjKKPnzJPrHq2Ncxq-mxKJygP8QA/edit#slide=id.p2) 
 
